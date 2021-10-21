@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="icon" href="./imgs/shopping-bag.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="mainSection">
+        <div id="part_left">
+            <h1>Shopping Cart</h1>
+            <p id="more">Click here to find out more !<img src="./imgs/info.png"></p>
+            <div id="art">
+                <div id="article" class="Apple">
+                    <img src="./imgs/pommes.PNG">
+                    <div id="description">
+                        <h2>Fresho Apple</h2>
+                        <h3>Red Delicious, Regular, 4 pcs (Approx. 530g - 640g)</h3>
+                    </div>
+                    <div id="plus_moins">
+                        <img src="./imgs/minus-sign.png" id="moins" onclick="soustraction(this)">
+                        <div id="count">0</div>
+                        <img src="./imgs/plus.png" id="plus" onclick="ajout(this)">
+                    </div>
+                    <p id="price_article">0DT</p>
+                    <div id="delike">
+                        <img src="./imgs/delete.png" id="delete" onclick="supprime(this)">
+                        <img src="./imgs/heart.png" id="like1" onclick="like(this)">
+                        <img src="./imgs/heart_red.png" id="like2"  onclick="dislike(this)">
+                    </div>
+               </div>
+                <hr>
+            </div>
+            <div id="art">
+                <div id="article" class="Banane">
+                    <img src="./imgs/banane.PNG">
+                    <div id="description">
+                        <h2>Fresho Banana</h2>
+                        <h3>Yelakki, 500 g</h3>
+                    </div>
+                    <div id="plus_moins">
+                        <img src="./imgs/minus-sign.png" id="moins" onclick="soustraction(this)">
+                        <div id="count">0</div>
+                        <img src="./imgs/plus.png" id="plus" onclick="ajout(this)">
+                    </div>
+                    <p id="price_article">0DT</p>
+                    <div id="delike">
+                        <img src="./imgs/delete.png" id="delete" onclick="supprime(this)">
+                        <img src="./imgs/heart.png" id="like1" onclick="like(this)">
+                        <img src="./imgs/heart_red.png" id="like2"  onclick="dislike(this)">
+                    </div>
+               </div>
+                <hr>
+            </div>
+            <div id="art">
+                <div id="article" class="Orange">
+                    <img src="./imgs/orange.PNG">
+                    <div id="description">
+                        <h2>Fresho Orange</h2>
+                        <h3>Imported, 6 pcs</h3>
+                    </div>
+                    <div id="plus_moins">
+                        <img src="./imgs/minus-sign.png" id="moins" onclick="soustraction(this)">
+                        <div id="count">0</div>
+                        <img src="./imgs/plus.png" id="plus" onclick="ajout(this)">
+                    </div>
+                    <p id="price_article">0DT</p>
+                    <div id="delike">
+                        <img src="./imgs/delete.png" id="delete" onclick="supprime(this)">
+                        <img src="./imgs/heart.png" id="like1" onclick="like(this)">
+                        <img src="./imgs/heart_red.png" id="like2"  onclick="dislike(this)">
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div id="part_right">
+            <h1>Order Details</h1>
+            <img src="./imgs/carts.png">
+            <input placeholder="Enter promo code here">
+            <hr>
+            <h3>Total cost</h3>
+            <p id="total">0DT</p>
+            <button type="submit" onclick="sub(this)">Checkout</button>
+            <img src="./imgs/thumb-ups.png" id="done">
+        </div>
+    </section>
+    <script src="./script.js" defer></script>
+</body>
+</html>
